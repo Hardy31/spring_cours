@@ -1,3 +1,15 @@
-1 проект SpringProject архетип maven-archetype-quickstart
-2 в maven repository выбираем Spring Context и добавляем зависимость в pom.xml
+1 проект spring_cours архетип maven-archetype-quickstart
+2 в maven repository выбираем Spring Context (версия 5.2.8  java 11) и добавляем зависимость в pom.xml
+
 3 в корне создаем папку resources и помечаем ее меткой Resources Root
+
+4 в файле MyConfig на уровне класса добавляем аннотацию @EnableAspectJAutoProxy
+5  создаем пакет aspect в нем создаем класс LogingAspect
+помечаем его аннотациями @Component @Aspect .
+
+Аннатация @Aspect будет красная. необходимо в проект подключить  библиотеку AspectJWeaver.
+Ее скачиваем с MavenRepository (версия 1.9.6)
+и подключаем к проекту.
+     в IDE -> ProjectStracture ->Library-> + ->java -> (выбираем папку home/alex/javaLibrary/aspectjweaver-1.9.6.jar) -> OK -> apply
+
+6
