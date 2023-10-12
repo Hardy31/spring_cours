@@ -10,14 +10,26 @@ public class Test1 {
         UniverLibrary univerLibrary = context.getBean("univerLibrary", UniverLibrary.class);
         SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
         PubliLibrarry publiLibrarry = context.getBean("publiLibrarry", PubliLibrarry.class);
-//        Book book = context.getBean("book", Book.class);
+        Book book = context.getBean("book", Book.class);
 
 
 
-        univerLibrary.getBook();
-        univerLibrary.getMagazine();
-        univerLibrary.returnMagazine();
-        univerLibrary.addBook();
+        univerLibrary.addBook("Л.Н. Толстой", book);;
+//        univerLibrary.getMagazine();
+
+
+
+
+
+//        univerLibrary.getBook();
+//        univerLibrary.getMagazine();
+
+
+
+//        univerLibrary.getBook();
+//        univerLibrary.getMagazine();
+//        univerLibrary.returnMagazine();
+//        univerLibrary.addBook();
 
 
 

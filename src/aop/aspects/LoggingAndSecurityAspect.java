@@ -9,37 +9,37 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAndSecurityAspect {
 
-//    @Pointcut("execution(* aop.UniverLibrary.get*())")
-    @Pointcut("execution( * get*())")
-    private void allGetMethodfromUniverLibrary() {}
-
-    @Pointcut("execution (* return*())")
-    private void allReturnMethod(){}
-
-    @Pointcut("execution(* dd*(..))")
-    private  void allAddMethod() {}
-
-    @Pointcut("execution(* remove*(..))")
-    private void allRemoveMethod() {}
-
-
-    @Pointcut("allGetMethodfromUniverLibrary() || allReturnMethod()" )
-    private void allGetAndReturnMethod(){}
-
-    @Before("allGetMethodfromUniverLibrary()")
-    public void beforeGetLogingAdvice() {
-        System.out.println("Before/allGetMethodfromUniverLibrary() Класса LoggingAndSecurityAspect->beforeGetLoggingAdviсe()  - writing Log #1 " );
-    }
-
-    @Before("allReturnMethod()")
-    public void beforeReturnLogingAdvice(){
-        System.out.println("Before/allReturnMethod() Класса LoggingAndSecurityAspect->beforeReturnLogingAdvice()  - writing Log #2 " );
-    }
-
-    @Before("allGetAndReturnMethod()")
-    public void beforeGerAndReturnMethod(){
-        System.out.println("Before/allGetAndReturnMethod() Класса LoggingAndSecurityAspect->beforeGerAndReturnMethod() - writing Log #1 and 2");
-    }
+////    @Pointcut("execution(* aop.UniverLibrary.get*())")
+//    @Pointcut("execution( * get*())")
+//    private void allGetMethodfromUniverLibrary() {}
+//
+//    @Pointcut("execution (* return*())")
+//    private void allReturnMethod(){}
+//
+//    @Pointcut("execution(* dd*(..))")
+//    private  void allAddMethod() {}
+//
+//    @Pointcut("execution(* remove*(..))")
+//    private void allRemoveMethod() {}
+//
+//
+//    @Pointcut("allGetMethodfromUniverLibrary() || allReturnMethod()" )
+//    private void allGetAndReturnMethod(){}
+//
+//    @Before("allGetMethodfromUniverLibrary()")
+//    public void beforeGetLogingAdvice() {
+//        System.out.println("Before/allGetMethodfromUniverLibrary() Класса LoggingAndSecurityAspect->beforeGetLoggingAdviсe()  - writing Log #1 " );
+//    }
+//
+//    @Before("allReturnMethod()")
+//    public void beforeReturnLogingAdvice(){
+//        System.out.println("Before/allReturnMethod() Класса LoggingAndSecurityAspect->beforeReturnLogingAdvice()  - writing Log #2 " );
+//    }
+//
+//    @Before("allGetAndReturnMethod()")
+//    public void beforeGerAndReturnMethod(){
+//        System.out.println("Before/allGetAndReturnMethod() Класса LoggingAndSecurityAspect->beforeGerAndReturnMethod() - writing Log #1 and 2");
+//    }
 
 
 
@@ -63,7 +63,7 @@ public class LoggingAndSecurityAspect {
 //
 //    @Before("allGetMethod()")
 //    public void beforeGetLoggingAdviсe(){
-//        System.out.println( "Before/pointcut execution(* get*()) Класса LoggingAndSecurityAspect->beforeGetLoggingAdviсe()  - попытка получить книгу или журнал "  );
+//        System.out.println( "Before/pointcut execution(* get*()) Класса LoggingAndSecurityAspect->beforeGetLoggingAdviсe()  - Логирование: попытка получить книгу или журнал "  );
 //    }
 //
 //    @Before("allGetMethod()")
